@@ -1,0 +1,138 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.form-with-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title-text {
+    font-size: 32px;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact-inputs {
+    background: #EEE;
+    border: 1px solid #676576;
+    padding: 0 10px 10px;
+    margin: 0 20px;
+}
+
+.content-block {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.label-input-block {
+    margin: 10px 0;
+}
+
+.input-label {
+    display: block;
+}
+
+.form {
+    display: block;
+    margin: auto;
+}
+
+.error-message {
+    display: none;
+    color: #F00;
+}
+
+.confirm-dialog {
+    display: none;
+}
+
+.edit-dialog {
+    display: none;
+}
+
+.dialog-first-block {
+    margin-top: 30px;
+}
+
+.main-table {
+    border-collapse: collapse;
+    background: #FFF;
+    margin: 20px;
+    word-break: break-all;
+}
+
+    .main-table thead {
+        text-align: left;
+        color: #FFF;
+        background: #3498DB;
+    }
+
+    .main-table th,
+    .main-table td {
+        padding: 14px 10px 10px;
+        border: 1px solid #CECECE;
+    }
+
+    .main-table tbody tr:nth-child(odd) {
+        background: #EEE;
+    }
+
+.number {
+    width: 2%;
+}
+
+.last-name {
+    width: 25%;
+}
+
+.first-name {
+    width: 25%;
+}
+
+.phone-number {
+    width: 25%;
+}
+
+.edit-row-button {
+    margin: 0 5px 5px 0; 
+}
+
+.buttons-block {
+    width: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.number-cell {
+    text-align: center;
+}
+
+.dialog-main-text {
+    margin-bottom: 20px;
+}
+
+.button-hover-hand {
+    cursor: pointer;
+}
+
+.input-invalid {
+    border-color: #F00;
+}
+
+.edit-dialog-icon-style {
+    float: left;
+    margin: 0 12px 10px 0;
+}
+
+.delete-dialog-icon-style {
+    float: left;
+    margin: 6px 12px 10px 0;
+}

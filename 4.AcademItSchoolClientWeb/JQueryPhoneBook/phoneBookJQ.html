@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery Phone book </title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="jquery-3.7.0.js"></script>
+    <script defer src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="form-with-title">
+        <form id="add-form" class="form">
+            <h1 class="main-title-text">JQuery phone book</h1>
+            <div class="contact-inputs content-block">
+                <div class="label-input-block">
+                    <label class="input-label" for="last-name-add-input">Last name:</label>
+                    <input id="last-name-add-input"
+                           class="add-input"
+                           maxlength="30"
+                           type="text"
+                           placeholder="Last name" />
+                    <div class="error-message">Field is not valid</div>
+                </div>
+                <div class="label-input-block">
+                    <label class="input-label" for="first-name-add-input">First name:</label>
+                    <input id="first-name-add-input"
+                           class="add-input"
+                           maxlength="30"
+                           type="text"
+                           placeholder="First name" />
+                    <div class="error-message">Field is not valid</div>
+                </div>
+                <div class="label-input-block">
+                    <label class="input-label" for="phone-add-input">Phone number:</label>
+                    <input id="phone-add-input"
+                           maxlength="10"
+                           type="text"
+                           placeholder="Phone number" />
+                    <div class="error-message">Field is not valid</div>
+                </div>
+                <div class="content-block">
+                    <button id="add-button"
+                            class="ui-button ui-widget ui-corner-all"
+                            type="submit">
+                        Add contact
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <table id="contacts-table" class="main-table">
+            <thead>
+                <tr>
+                    <th class="number">№</th>
+                    <th class="last-name">Last Name</th>
+                    <th class="first-name ">First Name</th>
+                    <th class="phone-number">Phone number</th>
+                    <th class="buttons-block"></th>
+                </tr>
+            </thead>
+            <tbody id="tbody-block"></tbody>
+        </table>
+
+        <div class="edit-dialog" title="Edit contact">
+            <p class="dialog-main-text">
+                <span class="ui-icon ui-icon-alert edit-dialog-icon-style"></span>
+                Edit contact:
+            </p>
+            <div class="content-block">
+                <div class="label-input-block dialog-first-block">
+                    <label class="input-label" for="last-name-edit-input">Last name:</label>
+                    <input id="last-name-edit-input"
+                           class="edit-input"
+                           maxlength="30"
+                           type="text"
+                           placeholder="Last name" />
+                    <div class="error-message">Field is not valid</div>
+                </div>
+                <div class="label-input-block">
+                    <label class="input-label" for="first-name-edit-input">First name:</label>
+                    <input id="first-name-edit-input"
+                           class="edit-input"
+                           maxlength="30"
+                           type="text"
+                           placeholder="First name" />
+                    <div class="error-message">Field is not valid</div>
+                </div>
+                <div class="label-input-block">
+                    <label class="input-label" for="phone-edit-input">Phone number:</label>
+                    <input id="phone-edit-input"
+                           maxlength="10"
+                           type="text"
+                           placeholder="Phone number" />
+                    <div class="error-message">Field is not valid</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="confirm-dialog" title="Delete this contact?">
+            <p class="dialog-main-text">
+                <span class="ui-icon ui-icon-alert delete-dialog-icon-style"></span>
+                These contact will be permanently deleted and cannot be recovered. Are you sure?
+            </p>
+            <div class="content-block">
+                <p>First name: <span class="first-name-dialog"></span>,</p>
+                <p>Last name: <span class="last-name-dialog"></span>,</p>
+                <p>Phone number: <span class="phone-number-dialog"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

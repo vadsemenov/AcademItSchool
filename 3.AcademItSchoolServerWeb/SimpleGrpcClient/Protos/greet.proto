@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option csharp_namespace = "SimpleGrpcServer";
+
+package greet;
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+  rpc CalculateSum (CalculateSumRequest) returns (CalculateSumResponse);
+  rpc GetFibonacciNumber (GetFibonacciNumberRequest) returns (GetFibonacciNumberResponse);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
+
+message CalculateSumRequest {
+  repeated int32 numbers = 1;
+}
+
+message CalculateSumResponse {
+  int32 sum = 1;
+}
+
+message GetFibonacciNumberRequest {
+  int32 index_of_fibonacci_number = 1;
+}
+
+message GetFibonacciNumberResponse {
+  int32 number = 1;
+}

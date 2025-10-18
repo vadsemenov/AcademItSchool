@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery TODO List </title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="h1 text-center">JQuery ToDo List</h1>
+        <form id="todo-form" class="form">
+            <div class="input-group has-validation">
+                <label for="new-todo-text" class="form-label">Введите текст:</label>
+                <div class="input-group has-validation row">
+                    <input id="new-todo-text" class="form-control" type="text" placeholder="Текст" />
+                    <div class="invalid-feedback text-center">
+                        Строка не должна быть пустой!
+                    </div>
+                </div>
+            </div>
+            <button id="add-button" class="btn btn-primary my-1" type="submit">Добавить</button>
+            <div class="table-responsive mt-1">
+                <table class="table table-bordered table-hover">
+                    <tbody id="todo-list">
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
